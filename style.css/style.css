@@ -48,7 +48,6 @@ body {
 
 /*HEADER*/
 
-
 .flex-header{
     display: flex;
     justify-content: space-between;
@@ -99,8 +98,7 @@ body {
 .title_header h1 {
     white-space: nowrap;
     display:inline-block;
-    text-align:center;
-    
+    text-align:center;    
 }
 
 #girassol {
@@ -117,8 +115,7 @@ body {
 nav ul{
     display:flex;
     list-style: none;
-    gap: 40px;
-    
+    gap: 40px;    
 }
 
 nav ul li {
@@ -136,10 +133,8 @@ nav ul li a{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }  
 
-
 nav{
     background-color: rgb(213, 213, 78);
-    margin-left: auto;
     padding-right: 1.5rem;
     border: 5px  rgb(146, 151, 135);
     border-style: double;
@@ -190,10 +185,7 @@ nav ul li a:hover::after{
     display: flex;
     align-items:center;
     justify-content: center;
-    padding-top: 3px;
-    left:50%;
-    right:50%;
-   
+    padding-top: 3px;  
 }
 
 .hero .hero-container{
@@ -210,8 +202,7 @@ nav ul li a:hover::after{
     text-shadow: 2px 1px 1px rgb(116, 11, 63);
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    position: flex;
+    font-style: italic;    
  }
 
  .hero .hero-container p {
@@ -228,9 +219,6 @@ nav ul li a:hover::after{
     padding-right: 30px;
     padding-bottom: 10px;
     padding-top: 1px;
-    backface-visibility: hidden;
-    box-sizing: border-box;
-    background-size: cover;
 }
  
  .hero .hero-container span{
@@ -296,7 +284,7 @@ nav ul li a:hover::after{
     box-shadow: 5px 3px 5px rgb(132, 67, 136);
 }
  
- /*sobre*/
+ /*SOBRE*/
 
  .about {
      padding: 12px 0;
@@ -313,9 +301,7 @@ nav ul li a:hover::after{
     font-size: 2.5rem;
     display: inline;
     padding-bottom: 8px;
-    color: rgb(79, 116, 79);
-    
-         
+    color: rgb(79, 116, 79);  
  }
 
 .section-title h2::after {
@@ -348,12 +334,8 @@ nav ul li a:hover::after{
     margin-bottom: 10px;
     margin-top: 10px;
     max-width: 1000px;
-    color: #5b0f4f;
     text-align: justify;
-    margin-top: 5px;
 }
-
-
 
 .products{
     display:grid;
@@ -372,15 +354,12 @@ nav ul li a:hover::after{
 }
 
 .products-card{
-    padding: 30px;
-    
+    padding: 30px;    
 }
-
 
 .products-card:hover{
     color:#07430c;
     background-color: #e0b3da;
-
 }
 
 .products-card h3{
@@ -396,7 +375,7 @@ nav ul li a:hover::after{
     color: #5b0f4f;
 }
  
-
+/*GALERIA*/
 
 .gallery{
     display:grid;
@@ -418,6 +397,7 @@ nav ul li a:hover::after{
     max-height:700px
 }
 
+/*FORMULÁRIO*/
 
 .contact-form {
     background-color: rgb(180, 141, 169);
@@ -452,7 +432,6 @@ nav ul li a:hover::after{
 .contact .contact-container p{
     justify-content: center;
     text-align: left;
-    position: flex;
     color: #43073b;
     font-size: 20px;
 }
@@ -464,30 +443,22 @@ nav ul li a:hover::after{
 
 @media (max-width: 768px) {
 
-    /* Esconde o menu de navegação principal */
     nav ul {
         display: none;
     }
 
-    /* Mostra o ícone do menu mobile (hambúrguer) */
     .mobile-menu {
         display: block;
-        /* ou 'flex', dependendo do ícone */
         padding-right: 20px;
-        /* Ajuste para dar um espaço da borda */
     }
 
-    /* Ajusta o espaçamento do header para alinhar melhor os itens */
     .flex-header {
         justify-content: space-between;
-        /* Alinha o título à esquerda e o menu à direita */
-        gap: 10px;
-        /* Diminui o espaço entre os elementos */
+        gap: 10px;       
     }
 
     .flex-header h1 {
         margin-left: 15px;
-        /* Diminui a margem em telas menores */
         font-size: 20px;
     }
 }
